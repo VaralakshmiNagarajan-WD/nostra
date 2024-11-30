@@ -366,13 +366,21 @@ input:focus {
 
 .most-wanted-container{
    position: relative; 
+   animation: scrollImages 15s linear infinite;
 }
 
 .most-wanted img{
     border-radius: 2%;
-    
-     
  }
+
+ @keyframes scrollImages {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
 
  .sale-overlay{
     position: absolute;
